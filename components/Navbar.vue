@@ -20,6 +20,9 @@
         >
           <font-awesome :icon="faLinkedin" />
         </a>
+        <a href="mailto:perstark.se@gmail.com">
+          <font-awesome :icon="faEnvelope" />
+        </a>
       </div>
     </nav>
   </header>
@@ -27,6 +30,7 @@
 
 <script lang="ts">
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default {
   name: "Navbar",
@@ -34,6 +38,7 @@ export default {
     return {
       faGithub,
       faLinkedin,
+      faEnvelope,
     };
   },
 };
