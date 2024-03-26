@@ -13,7 +13,7 @@ description: An entry guide to using Markdown to write pretty documents, includi
 Writing documents using Microsoft Office, Google Docs, Open Office etc, has in my opinion not provided the best UX experience. Especially not if you are used to mainly using the keyboard to navigate and produce. For much of my writing I just need sensible defaults and not worrying about formatting.
 Using [Markdown](https://en.wikipedia.org/wiki/Markdown) and [Pandoc](https://pandoc.org/) you can write documents in Markdown in your favorite text editor, mine is [Helix](https://helix-editor.com/) and end up with great looking PDFs, HTML, EPUB amongst others.
 
-I have used it to great extent to write academic papers, notes, cover letters amongst others.
+I have used it to great extent to write academic papers, notes, cover letters amongst others. The image below is a snippet of this post when it was in writing.
 
 ![Snippet of the current post in writing](/images/markdown-helix-snippet.png){style="margin-left:auto; margin-right:auto"}
 
@@ -126,7 +126,7 @@ And run with:
 
 `$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections --filter pandoc-plot --filter pandoc-crossref --citeproc`
 
-This is from a recent project of mine. Which resulted in this plot:
+This code is from a recent project of mine. Which resulted in this plot:
 
 ![Plot example](/plots/sentimentTime.png){style="margin-left:auto; margin-right:auto"}
 
@@ -135,3 +135,7 @@ This is from a recent project of mine. Which resulted in this plot:
 You can of course change the style of the citations generated. There is a large [repository](https://github.com/citation-style-language/styles) of styles availible. To use, download the .csl file and place it in the base directory, then you can run:
 
 `$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections --csl="your_csl.csl" --filter pandoc-plot --filter pandoc-crossref --citeproc`
+
+## Summary
+
+I personally feel that I've just so far scratched the surface of what's possible to do with Pandoc. But so far I'm very satisfied, this abstracts away a lot of the unpleasurable things with writing.
