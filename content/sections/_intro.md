@@ -1,6 +1,6 @@
 # Learning out loud
 
-[A blog about growth and discovery - Per Stark]{.subtitle}
+[A blog about growth and discovery - Per Stark]{.subtitle .text-purple-400}
 
 Welcome to my blog, a space where I share my journey of continuous learning and personal growth. As a psychologist and software developer, I've always been fascinated by the process of acquiring new skills and knowledge. This blog serves as a platform for me to "learn out loud" and document my experiences as I explore various topics in technology and beyond.
 

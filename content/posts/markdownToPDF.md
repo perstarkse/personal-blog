@@ -1,7 +1,7 @@
 ---
 title: Writing PDFs with Markdown
 date: 26/03/2024
-description: An entry to using Markdown to write pretty documents, including PDFs using Pandoc.
+description: An entry guide to using Markdown to write pretty documents, including PDFs using Pandoc.
 ---
 
 # Writing PDFs with Markdown
@@ -20,15 +20,15 @@ I have used it to great extent to write academic papers, notes, cover letters am
 ## Prerequisites
 
 - Text editor of choice, prefferably with Markdown syntax support.
-- Pandoc installed. Install on NixOS in shell with: 
+- Pandoc installed. Install on NixOS in shell with:
 
-```$ nix-shell -p pandoc texlive.combined.scheme-small```
+`$ nix-shell -p pandoc texlive.combined.scheme-small`
 
 ## Usage
 
 Write your content in a .md file, and when you are ready to create a PDF from your .md, then run:
 
-```$ pandoc your_document.md -o your_pdf.pdf```
+`$ pandoc your_document.md -o your_pdf.pdf`
 
 It will then parse the markdown and ouput a formatted PDF.
 
@@ -38,7 +38,7 @@ It will then parse the markdown and ouput a formatted PDF.
 
 Adding a Table of Content is as simple as adding --toc to the command, you can also have the sections automatically numbered using --number-sections.
 
-```$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections```
+`$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections`
 
 ![Snippet of the TOC](/images/markdown-number-sections.png){style="margin-left:auto; margin-right:auto"}
 
@@ -48,36 +48,38 @@ Pandoc can also make handling references a breeze. Both footnotes, references to
 
 To do this you also need pandoc-crossref installed. To install with pandoc in shell on NixOS:
 
-```$ nix-shell -p pandoc texlive.combined.scheme-small haskellPackages.pandoc-crossref```
+`$ nix-shell -p pandoc texlive.combined.scheme-small haskellPackages.pandoc-crossref`
 
-To handle the references we need to create and specify a bibliography file, we do this by inserting ```bibliography: references.bib``` to the top of the file.
+To handle the references we need to create and specify a bibliography file, we do this by inserting `bibliography: references.bib` to the top of the file.
 
 It will now look something like so:
-````
+
+```
 ---
 title: your_title
 date: 26/03/2024
 bibliography: references.bib
 ---
-````
+```
 
-The references.bib file being a standard BibTeX file, making it easy to import references. You can then cite from text by writing ```[@reference]```
+The references.bib file being a standard BibTeX file, making it easy to import references. You can then cite from text by writing `[@reference]`
 
 To generate the PDF with citations and references, run:
 
-```$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections --filter pandoc-crossref --citeproc```
+`$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections --filter pandoc-crossref --citeproc`
 
-It will both replace ```[@reference]``` with the information in the bibliography, as well as create a reference list at the end of the document.
+It will both replace `[@reference]` with the information in the bibliography, as well as create a reference list at the end of the document.
 
 ## Charts
 
 Using pandoc-plot you can generate plots directly from your markdown code using Python, R, ect. To install with the other libraries run:
 
-```$ nix-shell -p pandoc texlive.combined.scheme-small haskellPackages.pandoc-crossref haskelPackages.pandoc-plot```
+`$ nix-shell -p pandoc texlive.combined.scheme-small haskellPackages.pandoc-crossref haskelPackages.pandoc-plot`
 
 You will also need a python environment with matplotlib and numpy to generate the plots in the following code.
 
 You can then insert code like the following:
+
 ```
 import json
 import matplotlib.pyplot as plt
@@ -122,9 +124,9 @@ plt.tight_layout()
 
 And run with:
 
-```$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections --filter pandoc-plot --filter pandoc-crossref --citeproc```
+`$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections --filter pandoc-plot --filter pandoc-crossref --citeproc`
 
-This is from a recent project of mine. Which resulted in this plot: 
+This is from a recent project of mine. Which resulted in this plot:
 
 ![Plot example](/plots/sentimentTime.png){style="margin-left:auto; margin-right:auto"}
 
@@ -132,4 +134,4 @@ This is from a recent project of mine. Which resulted in this plot:
 
 You can of course change the style of the citations generated. There is a large [repository](https://github.com/citation-style-language/styles) of styles availible. To use, download the .csl file and place it in the base directory, then you can run:
 
-```$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections --csl="your_csl.csl" --filter pandoc-plot --filter pandoc-crossref --citeproc```
+`$ pandoc your_document.md -o your_pdf.pdf --toc --number-sections --csl="your_csl.csl" --filter pandoc-plot --filter pandoc-crossref --citeproc`
