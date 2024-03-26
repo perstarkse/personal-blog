@@ -47,9 +47,11 @@ The results showed some variety in sentiment over time based on the current cour
 ![Sentiment Over Time](/plots/sentimentTime.png){style="margin-left:auto; margin-right:auto"}
 
 Pearson's r correlation coefficients were calculated to examine the relationships between the Demand-Control-Support model variables (Control, Demand, Support) and sentiment scores. The results showed a moderate positive correlation between Control and Sentiment (r = 0.48, p = 0.002), suggesting that higher levels of perceived control were significantly associated with more positive sentiment in the chat messages. In contrast, there was a weak negative correlation between Demand and Sentiment (r = -0.27, p = 0.099), indicating that higher levels of perceived demands were slightly associated with more negative sentiment, but that this association was not significant at p < 0.05. The correlation between Support and Sentiment was weakly positive (r = 0.25, p = 0.130), suggesting that higher levels of perceived support were somewhat associated with more positive sentiment, but that this association was not significant at p < 0.05.
-![Pearson's R](/plots/pearsonsR.png){style="margin-left:auto; margin-right:auto; scale: 0.8"}
+
+![Pearson's R](/plots/pearsonsR.png){style="margin-left:auto; margin-right:auto"}
 
 A multiple linear regression analysis was conducted to examine the relationship between sentiment and three independent variables: control, demand, and support. The analysis aims to determine the impact of these variables on sentiment and assess the overall fit of the regression model. The regression results indicate that the model explains approximately 39.2% of the variation in sentiment (R-squared = 0.392). Looking at the individual coefficients, control has a positive and statistically significant relationship with sentiment (coefficient = 1.1861, p-value = 0.001), suggesting that as control increases relative to its mean, sentiment tends to increase as well. On the other hand, demand has a negative and statistically significant relationship with sentiment (coefficient = -0.7388, p-value = 0.005), indicating that higher levels of demand relative to its mean are associated with lower sentiment. Support has a positive coefficient (0.2506) but is not statistically significant (p-value = 0.232), suggesting that changes in support relative to its mean do not have a significant impact on sentiment.
+
 ![Multiple Linear Regression Analysis](/plots/regressionAnalysis.png){style="margin-left:auto; margin-right:auto"}
 
 ## Discussion
