@@ -11,3 +11,7 @@ I'm a psychologist, software developer and part time politician. I have a passio
 ## Blog technicals
 
 The blog is built using Nuxt and some modules, the most significant being [Nuxt Content](https://content.nuxt.com/) which allows me to write the posts, and most of the site if I want, using Markdown. The source code is availible at [Github](https://github.com/perstarkse/personal-blog) if you want to take a look. The style of the page is almost all due to [Tufte CSS](https://edwardtufte.github.io/tufte-css/).
+
+## Contact
+
+Feel free to reach out with questions, suggestions and more. I enjoy talking to new people and exchanging experiences. Up to the right you can see some contact options.
