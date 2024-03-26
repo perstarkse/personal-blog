@@ -319,8 +319,7 @@ blockquote .marginnote {
     text-align: left;
 }
 
-div.fullwidth,
-table.fullwidth {
+.fullwidth {
     width: 100%;
 }
 
