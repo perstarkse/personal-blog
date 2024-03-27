@@ -138,4 +138,6 @@ You can of course change the style of the citations generated. There is a large 
 
 ## Summary
 
+The end result is a PDF that's nicely formatted, with a table of contents, citations, charts and a reference list.
+
 I personally feel that I've just so far scratched the surface of what's possible to do with Pandoc. But so far I'm very satisfied, this abstracts away a lot of the unpleasurable things with writing.
