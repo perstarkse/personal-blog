@@ -64,4 +64,4 @@ The experience was very pleasant, people were helpful and encouraging. 10/10 ðŸš
 
 ## Final project
 
-The wonderful people at buidlguidl have set up a grants solution, where you can apply with an idea and get funding which I generously was given for my idea. What I chose to develop was a community building experience. The users submit inspirations to a contract and the application generates a story from these inspirations which is then presented in the application together with appropriate artwork.
+The wonderful people at buidlguidl have set up a grants solution, where you can apply with an idea and get funding which I generously was given for my idea. What I chose to develop was a community building experience. The users submit inspirations to a contract and the application generates a story from these inspirations which is then presented in the application together with appropriate artwork. Relying on a smart contract for record keeping means there is a great immutable version control and a timeline on how the story has evolved can be shown.
