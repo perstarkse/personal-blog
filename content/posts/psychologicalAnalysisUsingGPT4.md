@@ -1,6 +1,7 @@
 ---
 title: Validating Psychological Insight from Chat - An LLM-Driven Approach (GPT-4o)
 date: 10/06/2024
+datetime: 1717970400
 description: This article details an abbreviated form of the research paper I wrote on the subject of using Large Language Models (LLMs) for psychological analysis of chat messages, focusing on work/educational-related stress. I analyzed anonymized data from a Discord chat group consisting of students from an educational program, collected longitudinally from fall 2022 to summer 2023.
 ---
 
@@ -12,7 +13,7 @@ This article provides a glimpse into my research, which delves into the validity
 
 ## Introduction
 
-This study investigates whether Large Language Models (LLMs) can accurately capture and interpret psychological constructs from online communication, specifically focusing on the relationship between the demand-control-support model and student sentiment.  I analyzed anonymized chat data from our Discord group, collected over an academic year.
+This study investigates whether Large Language Models (LLMs) can accurately capture and interpret psychological constructs from online communication, specifically focusing on the relationship between the demand-control-support model and student sentiment. I analyzed anonymized chat data from our Discord group, collected over an academic year.
 
 ## Background
 
@@ -30,14 +31,14 @@ Using a custom Python script, I parsed and cleaned the Discord chat data. Then, 
 
 The results were striking. The LLM-derived insights strongly aligned with the predictions of the demand-control-support model:
 
-* **Control Matters:**  A strong positive correlation emerged between perceived control and positive sentiment, suggesting that students who felt more in control of their learning experienced greater well-being.
-* **Support as a Buffer:** The negative impact of high demands on sentiment was significantly reduced when students perceived strong support from peers or instructors.
+- **Control Matters:** A strong positive correlation emerged between perceived control and positive sentiment, suggesting that students who felt more in control of their learning experienced greater well-being.
+- **Support as a Buffer:** The negative impact of high demands on sentiment was significantly reduced when students perceived strong support from peers or instructors.
 
 These findings provide compelling evidence that LLMs can effectively capture and interpret psychologically meaningful information from online communication.
 
 ## Implications and Future Directions
 
-The ability of LLMs to extract these insights has profound implications for understanding and supporting student well-being.  By analyzing chat data, educators could gain a real-time understanding of student experiences, identify those who might be struggling, and tailor interventions to foster a more supportive and empowering learning environment.
+The ability of LLMs to extract these insights has profound implications for understanding and supporting student well-being. By analyzing chat data, educators could gain a real-time understanding of student experiences, identify those who might be struggling, and tailor interventions to foster a more supportive and empowering learning environment.
 
 While this study focused on a specific context, future research should explore the generalizability of these findings across diverse educational settings and LLM models. Additionally, direct validation against established psychological measures will further strengthen the validity of this approach.
 

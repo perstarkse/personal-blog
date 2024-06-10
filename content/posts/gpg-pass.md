@@ -1,5 +1,8 @@
 ---
+title: Getting Started with pass - A Self-Hosted, Secure, and CLI-Friendly Password Manager
 date: 27/04/2024
+datetime: 1714168800
+description: Learn how to set up and use pass, a self-hosted, secure, and CLI-friendly password manager, to efficiently manage your passwords with features like multiline inserts, rofi-pass, and pass-otp.
 ---
 
 # Getting Started with pass: A Self-Hosted, Secure, and CLI-Friendly Password Manager

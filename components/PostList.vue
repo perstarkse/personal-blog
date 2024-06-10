@@ -29,6 +29,6 @@ const props = defineProps<{
 const query: QueryBuilderParams = {
   path: "/posts",
   limit: props.limit || 5,
-  sort: [{ date: -1 }],
+  sort: [{ datetime: -1 }],
 };
 </script>

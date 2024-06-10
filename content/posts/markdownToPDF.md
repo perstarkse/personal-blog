@@ -1,6 +1,7 @@
 ---
 title: Writing PDFs with Markdown
 date: 26/03/2024
+datetime: 1711407600
 description: An entry guide to using Markdown to write pretty documents, including PDFs using Pandoc.
 ---
 

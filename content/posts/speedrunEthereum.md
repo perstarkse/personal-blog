@@ -1,6 +1,7 @@
 ---
 title: Speedrunning Ethereum
 date: 09/05/2024
+datetime: 1715205600
 description: My journey through the great experience of the programme at Speedrun Ethereum.
 ---
 

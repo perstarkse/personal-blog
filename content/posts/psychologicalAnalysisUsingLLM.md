@@ -1,6 +1,7 @@
 ---
 title: Using LLMs to do Psychological Research, a Feasibility Study (GPT-3.5)
 date: 24/03/2024
+datetime: 1711234800
 description: This article details an abbreviated form of the research paper I wrote on the subject of using Large Language Models (LLMs) for psychological analysis of chat messages, focusing on work/educational-related stress. I analyzed anonymized data from a Discord chat group consisting of students from an educational program, collected longitudinally from fall 2022 to summer 2023.
 ---
 
