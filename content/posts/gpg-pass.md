@@ -1,3 +1,7 @@
+---
+date: 27/04/2024
+---
+
 # Getting Started with pass: A Self-Hosted, Secure, and CLI-Friendly Password Manager
 
 As a long-time user of 1Password, I've grown accustomed to the convenience and security it provides. However, I've always been disappointed with the CLI experience. The command-line interface is clunky and limited, making it difficult to manage my passwords efficiently. That's why I decided to explore alternative solutions, and I'm excited to share my experience with `pass`, a self-hosted, secure, and CLI-friendly password manager.

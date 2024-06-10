@@ -1,10 +1,12 @@
 ---
-title: Using LLMs to do Psychological Research, a Feasibility Study
+title: Using LLMs to do Psychological Research, a Feasibility Study (GPT-3.5)
 date: 24/03/2024
 description: This article details an abbreviated form of the research paper I wrote on the subject of using Large Language Models (LLMs) for psychological analysis of chat messages, focusing on work/educational-related stress. I analyzed anonymized data from a Discord chat group consisting of students from an educational program, collected longitudinally from fall 2022 to summer 2023.
 ---
 
-# Using LLMs to do Psychological Research, a Feasibility Study
+# Using LLMs to do Psychological Research, a Feasibility Study (Archived)
+
+Please view the latest post where I use gpt-4o instead to do the analysis.
 
 When GPT-3.5 and GPT-4 was released my interest for NLP models peaked. I'd previously had some interaction with NLP, but not much. One potential target of interest at the time was related to the educational programme I was attending. I was attending a two year programme in web development provided at distance. We had a Discord chat group, in which me, and other students exchanged information, laughs and frustrations related to the education.
 
