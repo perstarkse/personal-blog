@@ -11,6 +11,8 @@ When GPT-3.5 and GPT-4 were released, my interest in NLP models skyrocketed. I'd
 
 This article provides a glimpse into my research, which delves into the validity of using LLMs for psychological analysis. I've recently updated the study with a new model, GPT-4o, and the findings are even more compelling.
 
+You can download the full paper [here](/papers/gpt4o-psych-research.pdf)
+
 ## Introduction
 
 This study investigates whether Large Language Models (LLMs) can accurately capture and interpret psychological constructs from online communication, specifically focusing on the relationship between the demand-control-support model and student sentiment. I analyzed anonymized chat data from our Discord group, collected over an academic year.
