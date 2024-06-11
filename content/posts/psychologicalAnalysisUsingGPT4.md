@@ -9,7 +9,7 @@ description: This article details an abbreviated form of the research paper I wr
 
 When GPT-3.5 and GPT-4 were released, my interest in NLP models skyrocketed. I'd previously dabbled in NLP, but these powerful new tools opened up exciting possibilities. One area that particularly intrigued me was the potential to analyze the online communication of students in my web development program. We had a lively Discord chat group where we shared information, laughs, and frustrations related to the education – a rich dataset for exploring student experiences.
 
-This article provides a glimpse into my research, which delves into the validity of using LLMs for psychological analysis. I've recently updated the study with a new model, GPT-4.0, and the findings are even more compelling.
+This article provides a glimpse into my research, which delves into the validity of using LLMs for psychological analysis. I've recently updated the study with a new model, GPT-4o, and the findings are even more compelling.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ This model posits that the interplay of demands, control, and social support pla
 
 ## Method
 
-Using a custom Python script, I parsed and cleaned the Discord chat data. Then, I employed the GPT-4.0 model through the OpenAI API to analyze the text, extracting measures of perceived demands, control, support, and sentiment from weekly chunks of conversation.
+Using a custom Python script, I parsed and cleaned the Discord chat data. Then, I employed the GPT-4o model through the OpenAI API to analyze the text, extracting measures of perceived demands, control, support, and sentiment from weekly chunks of conversation.
 
 ## Key Findings
 
