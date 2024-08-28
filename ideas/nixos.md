@@ -1,12 +1,12 @@
 ---
 title: NixOS, a operating system for me?
-date: 26/03/2024
+date: 28/08/2024
 description: Detailing my experience of using NixOS, it's benefits and drawbacks, and how you can work around it for a great experience.
 ---
 
-# Writing PDFs with Markdown
+# NixOS & Nix
 
-[Using Pandoc to write PDFs in Markdown]{.subtitle}
+[NixOS - The right amount of abstraction?]{.subtitle}
 
 ## Intro
 

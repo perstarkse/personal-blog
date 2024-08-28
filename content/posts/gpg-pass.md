@@ -7,6 +7,21 @@ description: Learn how to set up and use pass, a self-hosted, secure, and CLI-fr
 
 # Getting Started with pass: A Self-Hosted, Secure, and CLI-Friendly Password Manager
 
+<!--toc:start-->
+- [Getting Started with pass: A Self-Hosted, Secure, and CLI-Friendly Password Manager](#getting-started-with-pass-a-self-hosted-secure-and-cli-friendly-password-manager)
+    - [Prerequisites](#prerequisites)
+    - [Installing pass](#installing-pass)
+    - [Initializing the Password Store](#initializing-the-password-store)
+    - [Setting up the Git Repo](#setting-up-the-git-repo)
+    - [Setting up the Remote Tracking Repo](#setting-up-the-remote-tracking-repo)
+    - [Generating Passwords](#generating-passwords)
+    - [Inserting Passwords with Multiline Support](#inserting-passwords-with-multiline-support)
+    - [Using rofi-pass](#using-rofi-pass)
+    - [Using pass-otp](#using-pass-otp)
+    - [pass for iOS](#pass-for-ios)
+    - [Conclusion](#conclusion)
+<!--toc:end-->
+
 As a long-time user of 1Password, I've grown accustomed to the convenience and security it provides. However, I've always been disappointed with the CLI experience. The command-line interface is clunky and limited, making it difficult to manage my passwords efficiently. That's why I decided to explore alternative solutions, and I'm excited to share my experience with `pass`, a self-hosted, secure, and CLI-friendly password manager.
 
 ### Prerequisites
