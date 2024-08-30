@@ -134,6 +134,12 @@ ul {
     line-height: 2rem;
 }
 
+
+ul li::before {
+  content: "-";
+  padding-right: 5px; /* optional, adds some space between the dash and the text */
+}
+
 p {
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;

@@ -1,67 +1,76 @@
 ---
-title: NixOS, a operating system for me?
+title: NixOS, an Operating System for Me?
 date: 28/08/2024
-description: Detailing my experience of using NixOS, it's benefits and drawbacks, and how you can work around it for a great experience.
+description: Detailing my experience with NixOS, its benefits and drawbacks, and how to work around them for a great experience.
 ---
 
 # NixOS & Nix
 
-[NixOS - The right amount of abstraction?]{.subtitle}
+[NixOS - The Right Amount of Abstraction?]{.subtitle}
 
 ## Intro
 
-For the past year or so I've been using NixOS for my systems. It started with a VM, included my workstation, work laptop, NAS, and more. All these systems are managed from the same configuration file and accessible on [github](https://github.com/perstarkse/nixos-config). For the past year I've experienced some frustrations, lots of learning, I've submitted a couple of packages to nixpkgs and taken over maintenance of some. 
+For the past year, I've been using NixOS for my systems, starting with a VM and eventually including my workstation, work laptop, NAS, and more. All these systems are managed from the same configuration file, accessible on [GitHub](https://github.com/perstarkse/nixos-config). During this time, I've experienced some frustrations, learned a lot, submitted packages to nixpkgs, and taken over maintenance of some.
 
-What prompted this exploration was the experienced fragility, of several different systems. Even while having backups of, dotfiles, relevant etc files, a copy of installed packages, a system breaking would entail quite the process of restoring it to working order.
+What prompted this exploration was the fragility of several systems I'd used before. Even with backups of dotfiles, relevant etc files, and installed packages, restoring a broken system was a tedious process.
 
-When I discovered NixOS with its declarative configurations, it just clicked. This post is my attempt to detail my current conceptual view on what NixOS is for me, what I enjoy about it, and some experienced frustrations along the way. If you haven't been in contact with Nix or NixOS before I'd recommend going to the bottom of the page an reading the short summary I wrote about Nix and NixOS.
+When I discovered NixOS with its declarative configurations, it clicked. This post details my current conceptual view on what NixOS is for me, what I enjoy about it, and some frustrations I've encountered. If you're new to Nix or NixOS, I recommend reading the short summary at the bottom of the page.
 
-## What is NixOS for me?
+## What is NixOS for Me?
 
-In it's completeness the best (albeit severly lacking) way I can describe it (or a subset of its components) is as a wrapper around a Linux system. It abstracts away several aspects to managing a system and services. Setting up a user, openssh and adding a public SSH key as a authorizedKey is as simple as adding:
+In its completeness, the best way I can describe NixOS (or a subset of its components) is as a wrapper around a Linux system. It abstracts away several aspects of managing a system and services. Setting up a user, OpenSSH, and adding a public SSH key as an authorized key is as simple as adding:
 
 ```nix
-  users.users = {
-    p = {
-      isNormalUser = true;
-      openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII6uq8nXD+QBMhXqRNywwCa/dl2VVvG/2nvkw9HEPFzn p@charon"
-      ];
-    };
+users.users = {
+  p = {
+    isNormalUser = true;
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII6uq8nXD+QBMhXqRNywwCa/dl2VVvG/2nvkw9HEPFzn p@charon"
+    ];
   };
+};
 
-  services.openssh = {
-    enable = true;
-    settings.PermitRootLogin = "no";
-    settings.PasswordAuthentication = false;
-  };
+services.openssh = {
+  enable = true;
+  settings.PermitRootLogin = "no";
+  settings.PasswordAuthentication = false;
+};
 ```
 
-None of these is hard to configure, and for a seasoned Linux user possibly something done in the sleep. But having this declared in a configuration file, and instantly applied makes things a breeze. 
+These configurations aren't hard to set up, and a seasoned Linux user might do them in their sleep. However, having them declared in a configuration file and instantly applied makes things a breeze.
 
-### Other notable aspects for me is: 
-- It's a way to ensure reproducibility of my systems. Backups are of course essential for data, but having the system itself be reproducible makes restoring quite a lot easier. 
-- It's a way to document what changes I've made to a system, and with version control, it's timestamped and reversible. 
+### Other Notable Aspects
 
-## On having the right amount of abstraction
+* It ensures reproducibility of my systems. Backups are essential for data, but having the system itself be reproducible makes restoring much easier.
+* It documents changes I've made to a system, and with version control, they're timestamped and reversible.
+* It offers great developer tooling, for example for setting up project enviroments. In my opinion it offers a substantially better version control than for example nvm for nodejs versions. It's easy to have environment variables set up and automatically applied with direnv. 
 
-Abstractions can be great, but they can also carry significant drawbacks. I think it's easy when looking at the example above to draw two conclusions: <strong>A</strong>, more can be done with less (code) and headspace. I do not have to remember all the commands, places in the filesystem and order of actions. <strong>B</strong>, one loses a certain connection to the underlying system. One can, and often should, read the modules/nixpkgs to find out what they do. And by doing so one can without a doubt learn the underlying.
+## On Having the Right Amount of Abstraction
 
-I've heard the concern being voiced in the <em>r/nixos</em> community that using NixOS impeeds the learning journey. And to a large degree I agree. I think learning this more abstracted way is a shallower learning experience. But it also enables a wider scope. Most of us have somewhat limited time, and tools that enable us do more is generally good. One can wonder, to what purpose does the learning serve, being a gread sysadmin? If so perhaps it can be useful to run something else.
+Abstractions can be great, but they also carry significant drawbacks. Looking at the example above, it's easy to draw two conclusions: **A**, more can be done with less code and mental effort. I don't have to remember all the commands, file system locations, and action sequences. **B**, one loses a certain connection to the underlying system. One can, and often should, read the modules/nixpkgs to understand what they do. By doing so, one can learn the underlying system without a doubt.
 
-As always, key aspects to abstraction are to what degree it's at the correct level. Too abstracted and it becomes a hindrance, too little and it offers small benefits. As of writing I'm quite pleased with the amount. 
+I've heard concerns in the r/nixos community that using NixOS impedes the learning journey. I agree to a large degree. I think learning this more abstracted way is a shallower learning experience. However, it also enables a wider scope. Most of us have limited time, and tools that enable us to do more are generally good. One can wonder, to what purpose does the learning serve? Being a great sysadmin? If so, perhaps it's useful to run something else.
 
-## Nix 
+As always, key aspects to abstraction are finding the correct level. Too abstracted, and it becomes a hindrance; too little, and it offers small benefits. As of writing, I'm quite pleased with the amount.
+
+## Current pain points
+
+* Python projects. Have for me meant a significant issue. There are most likely great solutions, but for me the solutions I've opted for have always felt a bit hacky and suboptimal.
+* Documentation is a bit lacking. My current best workaround is looking through the options and searching github for Nix language files containing what I am looking for. Most time there is someone who has already solved the issue I'm having.
+
+### Nix
 
 Nix is several things:
-- A package manager serving the nixpkgs repository containing over 100 000 packages.
-  - Nix can be used on a variety of distros, as well as MacOS (nix-darwin).
-  - Nix package manager isolates packages from each other using a concept called the "Nix store".
-- The language in which the configuration files of NixOS and the nixpkgs are written in.
-  - The Nix language is a functional programming language allowing for concise and reproducible configuration.
-- A build tool allowing for reproducible builds of packages and configurations.
 
-This is how a part of a .nix config can look:
+* A package manager serving the nixpkgs repository containing over 100,000 packages.
+	+ Nix can be used on various distros, as well as MacOS (nix-darwin).
+	+ Nix package manager isolates packages from each other using the "Nix store" concept.
+* The language in which NixOS and nixpkgs configuration files are written.
+	+ The Nix language is a functional programming language allowing for concise and reproducible configuration.
+* A build tool enabling reproducible builds of packages and configurations.
+
+Here's an example of a part of a `.nix` config:
+
 ```nix
 {pkgs, ...}: {
   home.packages = with pkgs; [
@@ -78,8 +87,10 @@ This is how a part of a .nix config can look:
 ### NixOS
 
 NixOS is a Linux distribution built on top of Nix, providing:
-- A declarative configuration model, where the user describes the desired system configuration.
-  - NixOS configuration files define the desired state of the system, which is then built and managed by Nix.
-- A set of tools for managing the system configuration, including `nixos-rebuild` and `nixos-config`.
-- A community-driven repository of configuration modules, allowing users to easily customize their system.
 
+* A declarative configuration model, where the user describes the desired system configuration.
+	+ NixOS configuration files define the desired state of the system, which is then built and managed by Nix.
+* A set of tools for managing the system configuration, including `nixos-rebuild` and `nixos-config`.
+* A community-driven repository of configuration modules, allowing users to easily customize their system.
+
+[EOF]{.hidden}
