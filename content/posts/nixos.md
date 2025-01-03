@@ -1,6 +1,7 @@
 ---
 title: NixOS, an Operating System for Me?
 date: 28/08/2024
+datetime: 1724796000000
 description: Detailing my experience with NixOS, its benefits and drawbacks, and how to work around them for a great experience.
 ---
 
@@ -41,9 +42,9 @@ These configurations aren't hard to set up, and a seasoned Linux user might do t
 
 ### Other Notable Aspects
 
-* It ensures reproducibility of my systems. Backups are essential for data, but having the system itself be reproducible makes restoring much easier.
-* It documents changes I've made to a system, and with version control, they're timestamped and reversible.
-* It offers great developer tooling, for example for setting up project enviroments. In my opinion it offers a substantially better version control than for example nvm for nodejs versions. It's easy to have environment variables set up and automatically applied with direnv. 
+- It ensures reproducibility of my systems. Backups are essential for data, but having the system itself be reproducible makes restoring much easier.
+- It documents changes I've made to a system, and with version control, they're timestamped and reversible.
+- It offers great developer tooling, for example for setting up project enviroments. In my opinion it offers a substantially better version control than for example nvm for nodejs versions. It's easy to have environment variables set up and automatically applied with direnv.
 
 ## On Having the Right Amount of Abstraction
 
@@ -55,19 +56,19 @@ As always, key aspects to abstraction are finding the correct level. Too abstrac
 
 ## Current pain points
 
-* Python projects. Have for me meant a significant issue. There are most likely great solutions, but for me the solutions I've opted for have always felt a bit hacky and suboptimal.
-* Documentation is a bit lacking. My current best workaround is looking through the options and searching github for Nix language files containing what I am looking for. Most time there is someone who has already solved the issue I'm having.
+- Python projects. Have for me meant a significant issue. There are most likely great solutions, but for me the solutions I've opted for have always felt a bit hacky and suboptimal.
+- Documentation is a bit lacking. My current best workaround is looking through the options and searching github for Nix language files containing what I am looking for. Most time there is someone who has already solved the issue I'm having.
 
 ### Nix
 
 Nix is several things:
 
-* A package manager serving the nixpkgs repository containing over 100,000 packages.
-	+ Nix can be used on various distros, as well as MacOS (nix-darwin).
-	+ Nix package manager isolates packages from each other using the "Nix store" concept.
-* The language in which NixOS and nixpkgs configuration files are written.
-	+ The Nix language is a functional programming language allowing for concise and reproducible configuration.
-* A build tool enabling reproducible builds of packages and configurations.
+- A package manager serving the nixpkgs repository containing over 100,000 packages.
+  - Nix can be used on various distros, as well as MacOS (nix-darwin).
+  - Nix package manager isolates packages from each other using the "Nix store" concept.
+- The language in which NixOS and nixpkgs configuration files are written.
+  - The Nix language is a functional programming language allowing for concise and reproducible configuration.
+- A build tool enabling reproducible builds of packages and configurations.
 
 Here's an example of a part of a `.nix` config:
 
@@ -88,9 +89,9 @@ Here's an example of a part of a `.nix` config:
 
 NixOS is a Linux distribution built on top of Nix, providing:
 
-* A declarative configuration model, where the user describes the desired system configuration.
-	+ NixOS configuration files define the desired state of the system, which is then built and managed by Nix.
-* A set of tools for managing the system configuration, including `nixos-rebuild` and `nixos-config`.
-* A community-driven repository of configuration modules, allowing users to easily customize their system.
+- A declarative configuration model, where the user describes the desired system configuration.
+  - NixOS configuration files define the desired state of the system, which is then built and managed by Nix.
+- A set of tools for managing the system configuration, including `nixos-rebuild` and `nixos-config`.
+- A community-driven repository of configuration modules, allowing users to easily customize their system.
 
 [EOF]{.hidden}
