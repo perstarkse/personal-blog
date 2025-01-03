@@ -1,6 +1,6 @@
 # Learning out loud
 
-\[A blog about growth and discovery - Per Stark\]{.subtitle .text-purple-400}
+[A blog about growth and discovery - Per Stark]{.subtitle .text-purple-400}
 
 Welcome to my blog, a space where I share my journey of continuous learning and personal growth. This blog serves as a platform for me to "learn out loud" and document my experiences as I explore various topics.
 
