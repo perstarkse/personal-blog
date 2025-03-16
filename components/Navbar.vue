@@ -20,7 +20,7 @@
         >
           <font-awesome :icon="faLinkedin" />
         </a>
-        <a href="mailto:perstark.se@gmail.com">
+        <a href="mailto:per@starks.cloud">
           <font-awesome :icon="faEnvelope" />
         </a>
       </div>

@@ -1,7 +1,7 @@
 # Learning out loud
 
-[A blog about growth and discovery - Per Stark]{.subtitle .text-purple-400}
+[Untangling thoughts and sharing discoveries - Per Stark]{.subtitle .text-purple-400}
 
-Welcome to my blog, a space where I share my journey of continuous learning and personal growth. This blog serves as a platform for me to "learn out loud" and document my experiences as I explore various topics.
+Welcome to my corner of the internet. Here I'm thinking, learning, and documenting as I go. I write about what interests me, puzzles I'm working through, and the occasional insight that seems worth sharing.
 
-I firmly believe in the power of open source and collaborative learning. I'm a strong advocate for the free exchange of ideas and knowledge, and I believe that we can all benefit from the collective wisdom of our communities. I hope to contribue to that by sharing my experiences.
+Much like open source code, I believe ideas grow stronger when shared and examined openly. This blog is my small contribution to that collective knowledge pool - messy parts, revisions, and all. Some posts will be polished, others more like thinking drafts. All are part of learning out loud.
