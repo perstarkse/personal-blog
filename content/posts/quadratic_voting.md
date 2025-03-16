@@ -25,11 +25,11 @@ The system has since been tested in various settings, from corporate governance 
 
 ## nxForm
 
-In my quest to implement quadratic voting for our organization, I found existing solutions lacking in key areas. This led me to develop [nxForm](https://nxform.starks.cloud), a web application tailored to meet specific needs while embracing modern technologies.
+Since I wanted to try this out for a organization that I am active in which I feel could benefit from the QV approach, I developed [nxForm](https://nxform.starks.cloud), a web application tailored to meet my specific needs.
 
 The primary motivation came from language barriers within our organization - many members are more comfortable with Swedish than English. While several quadratic voting platforms exist, none offered Swedish localization. Additionally, I needed features like QR code sharing for in-person voting sessions and wanted full control over our data. Some existing solutions also had concerning issues, such as invalid SSL certificates.
 
-Beyond solving immediate organizational needs, nxForm was conceived with research potential in mind. As a certified psychologist, I saw an opportunity to explore how quadratic voting might enhance psychological research, particularly in survey methodology. The ability to measure preference intensity could offer fascinating insights into human decision-making and group dynamics.
+Beyond solving immediate organizational needs, nxForm was conceived with research potential in mind. I also saw an opportunity to explore how quadratic voting might enhance psychological research, particularly in survey methodology. The ability to measure preference intensity could offer additional insights into human decision-making and group dynamics.
 
 From a technical perspective, nxForm provided an exciting opportunity to work with cutting-edge technologies:
 
@@ -37,6 +37,6 @@ From a technical perspective, nxForm provided an exciting opportunity to work wi
 - **Backend**: Powered by Rust and the Axum framework, delivering exceptional performance and reliability
 - **Infrastructure**: Deployed on AWS Lambda for scalability and cost-effectiveness
 
-The choice of Rust and Axum for the backend proved particularly rewarding. The combination offers outstanding ergonomics and developer experience, while maintaining the performance and safety guarantees Rust is known for. This tech stack not only ensures a snappy user experience but also provides the robustness needed for serious research applications.
+The choice of Rust and Axum for the backend proved particularly rewarding and **fun**. The combination offers outstanding ergonomics and developer experience, while maintaining the performance and safety guarantees Rust is known for. This tech stack not only ensures a snappy user experience but also provides the robustness needed for serious research applications.
 
 ![nxForm](/images/nxform.png){style="margin-left:auto; margin-right:auto;"}
