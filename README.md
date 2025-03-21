@@ -1,3 +1,20 @@
+# Personal blog 2024 edition
+
+Likes:
+
+- Writing posts and sections in markdown
+- Dynamic updating of links and lists
+- Good enough documentation of Content and Nuxt
+
+Dislikes:
+
+- Still overly complicated
+- Somewhat slow
+
+Adapted from the following starter:
+
+______________________________________________________________________
+
 # Content v2 Minimal Starter
 
 Look at the [Content documentation](https://content.nuxt.com/) to learn more.
